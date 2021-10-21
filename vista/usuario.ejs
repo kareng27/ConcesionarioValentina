@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloce</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" href="imagenes/logo_small_icon_only.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="bodyven">
+
+
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+    
+      <div class="container">
+        <nav class="nav-main">
+            
+          <img src="imagenes/logo_small.jpeg" alt="TechNews Logo" class="nav-brand">
+        
+          <ul class="menu">
+            <li>
+              <a href="#">Usuario</a>
+            </li>
+          </ul>
+          
+          
+          
+          <div class="logoa">
+            <p><%= uss %></p>
+              <img src="imagenes/logo_small_icon_only.jpeg" alt="">
+              <button id="botonnn"><a href="cerrar">Cerrar sesion</a></button>
+          </div>
+    
+          
+        </nav>
+      </div>
+
+      <a href="/datos" id="volver">Regresar a datos</a>
+
+    <section>
+    <div class="entry-form4">
+        <form action="/frminsertarusuario" method="POST">
+             <h2>Usuario</h2><br>
+             <br><input type="text" name="UsuId" class="form-control4" placeholder="Documento" required=""> 
+             <input type="text" name="UsuLogin" class="form-control4" placeholder="Usuario" required=""> 
+             <input type="text" name="UsuPassword" class="form-control4" placeholder="Clave" required="">
+             <input type="text" name="UsuTipo" class="form-control4" placeholder="Tipo" required="">                
+             <button class="submit-btn form-control" id="form-submit">Enviar</button>
+             
+            </form>
+   </div>
+
+</section>
+
+<from action="" name="frm" id="frm">
+  <table class="table">
+      <thead>
+          <tr>
+
+              <th>Documento</th>
+              <th>USUARIO</th>
+              <th>CLAVE</th>
+              <th>TIPO</th>
+          </tr>
+      </thead>
+
+      <!<tbody>
+       <% datos.forEach(function (datos){ %>    
+          <tr>
+              <td><input type="text" value="<%=datos.UsuId%>" name="documento" id="doc" class="doc"></td>
+              <td><input type="text" value="<%=datos.UsuLogin%>" name="nombre" id="nom" class="nom"></td>
+              <td><input type="text" value="<%=datos.UsuPassword%>" name="clave" id="cla" class="cla"></td>
+              <td><input type="text" value="<%=datos.UsuTipo%>" name="tipo" id="tipo" class="tipo"></td>
+          </tr>
+       <%})%>
+      </tbody>
+  </table>
+</from>
+
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

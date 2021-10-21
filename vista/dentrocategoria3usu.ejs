@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloce</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" href="imagenes/logo_small_icon_only.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="bodyven">
+
+
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+    
+      <div class="container1">
+        <nav class="nav-main">
+            
+          <img src="imagenes/logo_small.jpeg" alt="TechNews Logo" class="nav-brand">
+        
+          <ul class="menu">
+            <li>
+              <a href="#">Categorias</a>
+            </li>
+          </ul>
+          
+          
+          
+          <div class="logoa">
+            <p><%= uss %></p>
+              <img src="imagenes/logo_small_icon_only.jpeg" alt="">
+              <button id="botonnn"><a href="cerrar">Cerrar sesion</a></button>
+          </div>
+    
+          
+        </nav>
+      </div>
+
+
+      <a href="/consultacategoriausuario" id="volver">Click para volver </a>
+
+      <div class="espacio"></div>
+
+
+      <from action="" name="frm" id="frm">
+        <table class="table5">
+            <thead>
+                <tr>
+                    <th>MODELO</th>
+                    <th>MARCA</th>
+                    <th>COLOR</th>
+                    <th>ESTADO</th>
+                    <th>PRECIO</th>
+                </tr>
+            </thead>
+      
+            <!<tbody>
+             <% datos.forEach(function (datos){ %>    
+                <tr> 		
+                  
+                  <input type="hidden" value="<%=datos.VehiPlaca%>" name="placa" id="pla" class="pla">
+              <input type="hidden" value="<%=datos.VehiCatId%>" name="categoria" id="cat" class="cat">
+              <td><input type="text" value="<%=datos.VehiModelo%>" name="modelo" id="mod" class="mod"></td>
+              <td><input type="text" value="<%=datos.VehiMarca%>" name="marca" id="mar" class="mar"></td>
+              <td><input type="text" value="<%=datos.VehiColor%>" name="color" id="cor" class="cor"></td>
+              <td><input type="text" value="<%=datos.VehiEstado%>" name="estado" id="est" class="est"></td>
+              <td><input type="text" value="<%=datos.VehiPrecio%>" name="precio" id="pre" class="pre"></td>
+              <!--<td><a href="#"><input type="submit" value="Ver Vendedor" name="btnven" id="btnven" class="btnven"></a></td>-->
+
+
+                   
+                </tr>
+             <%})%>
+            </tbody>
+        </table>
+      </from>
+      
+
+<div class="espacio2"></div>
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

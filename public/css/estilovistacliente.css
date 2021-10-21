@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.tabla{
+
+    width: 25%;
+    padding: 50px 30px;
+    background-color:rgba(6, 46, 146, 0.699);
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-left: 35%;
+}
+
+.cuadros{ 
+    background-color: rgb(255,255,255);
+    height: 35px;
+
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+}
+
+.inicio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.titulo{
+    width: 75%;
+    height: 30px;
+    padding-left: 5%;
+}
+
+
+.logom{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(254, 255, 255);
+    width: 15%;
+    height: 70px;
+    align-items: center;
+    border: 3px solid rgb(72, 201, 176);
+}
+
+.logom img{
+    margin: 4px;
+    height: 60px;
+    width: 30%;
+    border-radius: 3px 3px 3px 3px;
+ 
+}
+
+.logom button{
+    height: 20px;
+    width: 60%;
+    background-color: rgb(255,255,255);
+}
+
+#tablasss{
+    background-color: aquamarine;
+  }

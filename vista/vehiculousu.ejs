@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloce</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" href="imagenes/logo_small_icon_only.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="bodyven">
+
+
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+    
+      <div class="container1">
+        <nav class="nav-main">
+            
+          <img src="imagenes/logo_small.jpeg" alt="TechNews Logo" class="nav-brand">
+        
+          <ul class="menu">
+            <li>
+              <a href="#">Registrar un vehículo para la venta.</a>
+            </li>
+          </ul>
+          
+          
+          
+          <div class="logoa">
+            <p><a href="/datosvendedorusu"><%= uss %></a></p>
+              <img src="imagenes/logo_small_icon_only.jpeg" alt="">
+              <button id="botonnn"><a href="cerrar">Cerrar sesion</a></button>
+          </div>
+    
+          
+        </nav>
+      </div>
+
+      
+
+      <div class="cate"><a href="/categoriausu">Ver Categorias de los Vehiculos</a></div>
+
+      <div class="cate1"><a href="/vistausuario" id="volver1">Click para volver a vista general</a></div>
+
+    <section>
+    <div class="entry-form2">
+        <form action="/frminsertarvehiculo" method="POST">
+             <h2>Registrar Vehículo</h2><br> 									
+             <br><input type="text" name="VehiPlaca" class="form-control2" placeholder="Placa" required="">
+             <input type="text" name="VehiDatId" class="form-control2" placeholder="Numero" required=""> 
+             <input type="text" name="VehiCatId" class="form-control2" placeholder="Categoria" required=""> 
+             <input type="text" name="VehiModelo" class="form-control2" placeholder="Modelo" required="">
+             <input type="text" name="VehiMarca" class="form-control2" placeholder="Marca" required="">
+             <input type="text" name="VehiColor" class="form-control2" placeholder="Color" required="">
+             <input type="text" name="VehiEstado" class="form-control2" placeholder="Estado" required="">
+             <input type="text" name="VehiPrecio" class="form-control2" placeholder="Precio del vehículo" required="">
+                       
+             <button class="submit-btn form-control" id="form-submit">Enviar</button>
+             
+            </form>
+   </div>
+
+</section>
+
+<from action="" name="frm" id="frm">
+  <table class="table80">
+      <thead>
+          <tr>
+
+              <th>PLACA</th>
+              <th>NUMERO</th>
+              <th>CATEGORIA</th>
+              <th>MODELO</th>
+              <th>MARCA</th>
+              <th>COLOR</th>
+              <th>ESTADO</th>
+              <th>PRECIO</th>
+          </tr>
+      </thead>
+
+      <!<tbody>
+       <% datos.forEach(function (datos){ %>    
+          <tr> 									
+            <td><input type="text" value="<%=datos.VehiPlaca%>" name="placa" id="pla" class="pla"></td>
+            <td><input type="text" value="<%=datos.VehiDatId%>" name="numero" id="num" class="num"></td>
+            <td><input type="text" value="<%=datos.VehiCatId%>" name="categoria" id="cat" class="cat"></td>
+            <td><input type="text" value="<%=datos.VehiModelo%>" name="modelo" id="mod" class="mod"></td>
+            <td><input type="text" value="<%=datos.VehiMarca%>" name="marca" id="mar" class="mar"></td>
+            <td><input type="text" value="<%=datos.VehiColor%>" name="color" id="cor" class="cor"></td>
+            <td><input type="text" value="<%=datos.VehiEstado%>" name="estado" id="est" class="est"></td>
+            <td><input type="text" value="<%=datos.VehiPrecio%>" name="precio" id="pre" class="pre"></td>
+          </tr>
+       <%})%>
+      </tbody>
+  </table>
+</from>
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

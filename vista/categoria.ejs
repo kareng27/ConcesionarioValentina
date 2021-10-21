@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloce</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" href="imagenes/logo_small_icon_only.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="bodyven">
+
+
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+    
+      <div class="container">
+        <nav class="nav-main">
+            
+          <img src="imagenes/logo_small.jpeg" alt="TechNews Logo" class="nav-brand">
+        
+          <ul class="menu">
+            <li>
+              <a href="#">Categorias</a>
+            </li>
+          </ul>
+          
+          
+          
+          <div class="logoa">
+            <p><%= uss %></p>
+              <img src="imagenes/logo_small_icon_only.jpeg" alt="">
+              <button id="botonnn"><a href="cerrar">Cerrar sesion</a></button>
+          </div>
+    
+          
+        </nav>
+      </div>
+
+
+      <a href="/vehiculo" id="volver">Click para volver a vehiculo</a>
+
+      <div class="espacio"></div>
+
+
+
+
+<from action="" name="frm" id="frm">
+  <table class="tablec">
+      <thead>
+          <tr>
+              <th>ID</th>
+              <th>TIPO</th>
+          </tr>
+      </thead>
+
+      <!<tbody>
+       <% datos.forEach(function (datos){ %>    
+          <tr id="tr">
+              <td><input type="text" value="<%=datos.CatId%>" name="numero" id="num" class="num"></td>
+              <td><input type="text" value="<%=datos.CatTipo%>" name="tipo" id="tipo" class="tipo"></td>
+          </tr>
+       <%})%>
+      </tbody>
+  </table>
+</from>
+
+<div class="espacio2"></div>
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
